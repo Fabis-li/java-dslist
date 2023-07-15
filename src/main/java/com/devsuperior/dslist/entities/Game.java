@@ -12,13 +12,15 @@ public class Game {
     private Long id;
     private String title;
 
-    @Column(name = "game_year") //customizar o nome no banco
+    @Column(name = "game_year") //customizar o nome da tabela no banco
     private int year;
     private String genre;
     private String platforms;
     private double score;
     private String imgUrl;
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Game(){
